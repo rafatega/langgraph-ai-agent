@@ -19,18 +19,6 @@ def multiply(a: int, b: int) -> int:
     return a * b
 
 
-@mcp.tool()
-def substract(a: int, b: int) -> int:
-    """Use esta função para subtrair um número inteiro de outro. Indicado para operações de diferença ou decremento."""
-    return a - b
-
-
-@mcp.tool()
-def division(a: int, b: int) -> float:
-    """Use esta função para dividir um número pelo outro. Ideal para operações que envolvem razão, média ou divisão de valores."""
-    return a / b
-
-
 # 3. Iniciando o servidor MCP
 if __name__ == "__main__":
     mcp.run(transport="stdio")

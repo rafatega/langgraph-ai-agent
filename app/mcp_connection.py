@@ -32,7 +32,7 @@ async def main():
             agent = create_react_agent(llm, tools)
 
             # Use o agente, por exemplo:
-            response = await agent.ainvoke({"messages": "Quanto é (5 + 5*10 - 50) dividido por 5?"})
+            response = await agent.ainvoke({"messages": "Quanto é (5 + 3) * 10? E depois some com 1000."})
             print(response)
 
 if __name__ == "__main__":
